@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="541.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="actividad_m3.CarritoController">
+   <children>
+      <TableView layoutX="39.0" layoutY="110.0" prefHeight="245.0" prefWidth="323.0">
+        <columns>
+          <TableColumn prefWidth="109.0" text="Nombre" />
+          <TableColumn prefWidth="126.0" text="Descripcion" />
+            <TableColumn prefWidth="87.0" text="Precio" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="39.0" text="Carrito:">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="406.0" layoutY="165.0" mnemonicParsing="false" text="Comprar" />
+      <Button layoutX="379.0" layoutY="247.0" mnemonicParsing="false" text="Cancelar compra" />
+   </children>
+</AnchorPane>
