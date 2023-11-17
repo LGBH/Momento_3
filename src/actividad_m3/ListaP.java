@@ -87,15 +87,12 @@ public class ListaP {
         if (cab == null) {
             cab = q;
             cab.sig = cab;
-            JOptionPane.showMessageDialog(null, "Agregado al final...");
         } else {
             aux = getReferencia(q.idProducto);
             if (aux == null) {
                 p = getUltimo();
                 p.sig = q;
                 q.sig = cab;
-                JOptionPane.showMessageDialog(null,
-                        "Agregado al final...");
             } else {
                 JOptionPane.showMessageDialog(null,
                         "Elemento existe...");
@@ -140,7 +137,7 @@ public class ListaP {
             anterior.sig = p.sig;
         }
 
-        JOptionPane.showMessageDialog(null, "Producto con ID " + id + " eliminado");
     }
+
 
 }

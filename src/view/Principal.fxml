@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="actividad_m3.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="actividad_m3.PrincipalController">
    <children>
       <Label layoutX="52.0" layoutY="86.0" prefHeight="35.0" prefWidth="116.0" text="Productos:">
          <font>
@@ -18,23 +18,23 @@
          </font>
       </Label>
       <Button fx:id="Agregar" layoutX="52.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Agregar Producto" />
-      <TableView fx:id="tablep" layoutX="53.0" layoutY="141.0" prefHeight="416.0" prefWidth="413.0">
+      <TableView fx:id="tablep" layoutX="53.0" layoutY="141.0" prefHeight="416.0" prefWidth="516.0">
         <columns>
           <TableColumn fx:id="idColumn" prefWidth="117.0" text="idProducto" />
-          <TableColumn fx:id="nomColumn" prefWidth="92.0" text="Nombre" />
-            <TableColumn fx:id="descColumn" prefWidth="111.0" text="Descripción" />
-            <TableColumn fx:id="precioColumn" prefWidth="90.0" text="Precio" />
+          <TableColumn fx:id="nomColumn" prefWidth="107.0" text="Nombre" />
+            <TableColumn fx:id="descColumn" prefWidth="191.0" text="Descripción" />
+            <TableColumn fx:id="precioColumn" prefWidth="100.0" text="Precio" />
         </columns>
          <contextMenu>
             <ContextMenu>
               <items>
-                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                <MenuItem fx:id="carrito" mnemonicParsing="false" text="Agregar al carrito" />
               </items>
             </ContextMenu>
          </contextMenu>
       </TableView>
-      <Button fx:id="Carrito" layoutX="386.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Carrito" />
-      <Label fx:id="Cuenta" layoutX="461.0" layoutY="56.0" text="1">
+      <Button fx:id="Carrito" layoutX="493.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonAction2" text="Carrito" />
+      <Label fx:id="Cuenta" layoutX="558.0" layoutY="63.0" text="0" textFill="#d30000">
          <font>
             <Font size="20.0" />
          </font>

@@ -10,6 +10,7 @@ public class RegistroController {
     private PrincipalController controladorp;
 
     // Elimina el método initialize si no necesitas inicialización específica para esta clase
+    
     @FXML
     private TextField idp;
 
